@@ -1,0 +1,113 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app{
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.player-container,
+.time-select,
+.sound-select{
+  height: 80%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+.time-select{
+}
+
+.player-container{
+
+  position: relative;
+
+}
+.player-container svg {
+  position: absolute;
+  width: 50%;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  pointer-events: none;
+}
+
+.time-display{
+  position: absolute;
+  bottom: 10%;
+  font-size: 50px;
+  color: #fff;
+}
+.sound-select button{
+
+  background: none;
+}
+.time-select button
+ {
+  height: 10%;
+  width: 30%;
+  font-size: 20px;
+  background: none;
+  color: #fff;
+  border: 2px solid;
+  border-radius: 5px;
+  transition: all .2s ease-in;
+
+}
+.time-select button:hover{
+  color:black;
+  background-color: #fff;
+}
+
+.sound-select button{
+  border: none;
+  height: 120px;
+  width: 120px;
+  padding: 30px;
+  border-radius: 50%;
+  
+
+}
+.sound-select button:focus{
+  outline: none;
+}
+
+.sound-select button:nth-child(1){
+  background-color: #4972a1;
+ 
+}
+.sound-select button:nth-child(2){
+  background-color: #a14f49;
+}
+.img{
+  height: 55%;
+
+ 
+}
+
+video{
+   position: fixed;
+   top:0;
+   left:0;
+   width: 100%;
+   z-index: -10;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
